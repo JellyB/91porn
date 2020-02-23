@@ -26,7 +26,7 @@ def enter(**kwargs):
     start = kwargs["start"]
     end = kwargs["end"]
     for page in range(start, end):
-        url = common.URL + "/v.php?next=watch&page=" + str(page)
+        url = common.URL + "/video.php?category=rf&page=" + str(page)
         try:
             print(threading.current_thread().name, " 解析 ", page, " 页 ", url)
             parseList(url)
@@ -49,7 +49,7 @@ def start():
         page_size = 1
         thread_total = total
     else:
-        page_size = total / 5 # start 5 thread to visit
+        page_size = int(total / 5) # start 5 thread to visit
 
     for i in range(1, thread_total + 1):
         start = (i - 1) * page_size + 1

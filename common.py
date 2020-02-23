@@ -11,7 +11,8 @@ cookies.set("language", "cn_CN", domain=".p06.rocks", path="/")
 # 91 的临时站点，可以随时更换
 #URL = "http://91porn.com/"
 #URL = "http://91.91p17.space/"
-URL = "https://p06.rocks"
+#URL = "https://p06.rocks"
+URL = "https://0122.workarea1.live/"
 KEY = "91"
 KEY_SRC = "91_src" # 每个视频源url对于的redis key
 KEY_NONE = "91_none"
