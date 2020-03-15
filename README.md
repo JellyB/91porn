@@ -21,6 +21,10 @@ Or on Unix-like OS
 
     $ pip install requests
 
+可能还需要 js2py
+
+总之，缺少什么你就安装什么就对了
+
 
 # 启动
 
