@@ -12,7 +12,8 @@ cookies.set("language", "cn_CN", domain=".p06.rocks", path="/")
 #URL = "http://91porn.com/"
 #URL = "http://91.91p17.space/"
 #URL = "https://p06.rocks"
-URL = "https://0122.workarea1.live/"
+# 用HTTP协议
+URL = "http://807.workgreat17.live/"
 KEY = "91"
 KEY_SRC = "91_src" # 每个视频源url对于的redis key
 KEY_NONE = "91_none"
