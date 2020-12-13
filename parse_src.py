@@ -33,11 +33,11 @@ def parse(url, c, ts):
         times = int(t[1])
         ts = int(ts)
         if times >= ts:
-            print( threading.current_thread().name,  " insert into redis ", src)
+            print( threading.current_thread().name,  " 满足条件插入redis： ", src)
             redisutil.add(src, common.KEY_SRC)
             c.lrem(common.KEY, 1, url)
         else:
-            print(threading.current_thread().name,  src, "Not enough time")
+            print(threading.current_thread().name,  src, "时长不够,时长：", times, "分钟")
     else:
         print(threading.current_thread().name,  url, " url的src解析为None, 插入 redis_error")
         redisutil.add(url, common.KEY_NONE)
