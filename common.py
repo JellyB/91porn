@@ -71,5 +71,5 @@ def visit(url):
         'X-Forwarded-For': randomIP}
     s = requests.Session()
     s.mount('http://', HTTPAdapter(max_retries=retries))
-    html = s.get(url, headers=headers, cookies=cookies).content
+    html = s.get(url, headers=headers, cookies=cookies, stream=True).content
     return html
